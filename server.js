@@ -5,13 +5,13 @@ const path = require('path');
 require('dotenv').config();
 
 // Importar banco de dados
-const { sequelize } = require('./models/database');
+const { sequelize } = require('./database');
 
 // Importar rotas
-const authRoutes = require('./routes/auth');
-const restauranteRoutes = require('./routes/restaurante');
-const produtoRoutes = require('./routes/produtos');
-const pedidoRoutes = require('./routes/pedidos');
+const authRoutes = require('./auth');
+const restauranteRoutes = require('./restaurante');
+const produtoRoutes = require('./produtos');
+const pedidoRoutes = require('./pedidos');
 
 const app = express();
 
@@ -71,3 +71,4 @@ app.listen(PORT, async () => {
     await initializeDatabase();
     console.log('✨ RestaurantePro SaaS iniciado com sucesso!');
 });
+

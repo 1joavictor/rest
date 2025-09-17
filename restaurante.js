@@ -1,6 +1,6 @@
 const express = require('express');
-const { Restaurante } = require('../models/database');
-const auth = require('../middleware/auth');
+const { Restaurante } = require('../database');
+const auth = require('../auth');
 const router = express.Router();
 
 // Buscar restaurante do usuário
@@ -56,3 +56,4 @@ router.post('/', auth, async (req, res) => {
 });
 
 module.exports = router;
+

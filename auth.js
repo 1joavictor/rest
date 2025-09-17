@@ -1,8 +1,8 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { Usuario, Restaurante } = require('../models/database');
-const auth = require('../middleware/auth');
+const { Usuario, Restaurante } = require('../database');
+const auth = require('../auth');
 const router = express.Router();
 
 // Registrar usuário
@@ -133,3 +133,4 @@ router.get('/me', auth, async (req, res) => {
 });
 
 module.exports = router;
+

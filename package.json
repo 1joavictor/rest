@@ -2,9 +2,9 @@
   "name": "restaurante-pro-saas",
   "version": "2.0.0",
   "description": "SaaS completo para gestão de restaurantes com integração iFood",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -25,3 +25,4 @@
   "author": "RestaurantePro Team",
   "license": "MIT"
 }
+

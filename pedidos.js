@@ -1,6 +1,6 @@
 const express = require('express');
-const { Pedido, Restaurante } = require('../models/database');
-const auth = require('../middleware/auth');
+const { Pedido, Restaurante } = require('../database');
+const auth = require('../auth');
 const router = express.Router();
 
 // Listar pedidos
@@ -111,3 +111,4 @@ router.patch('/:id/status', auth, async (req, res) => {
 });
 
 module.exports = router;
+

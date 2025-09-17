@@ -1,6 +1,6 @@
 const express = require('express');
-const { Produto, Restaurante } = require('../models/database');
-const auth = require('../middleware/auth');
+const { Produto, Restaurante } = require('../database');
+const auth = require('../auth');
 const router = express.Router();
 
 // Listar produtos
@@ -106,3 +106,4 @@ router.put('/:id', auth, async (req, res) => {
 });
 
 module.exports = router;
+
